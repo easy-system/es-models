@@ -12,8 +12,6 @@ namespace Es\Models;
 use Es\Container\AbstractContainer;
 use Es\Container\Accessors\AccessorsTrait;
 use Es\Container\Conversion\ConversionTrait;
-use Es\Container\Countable\CountableTrait;
-use Es\Container\Iterator\IteratorTrait;
 use Es\Container\Parameters\ParametersTrait;
 
 /**
@@ -23,8 +21,6 @@ abstract class AbstractModel extends AbstractContainer implements ModelInterface
 {
     use AccessorsTrait,
         ConversionTrait,
-        CountableTrait,
-        IteratorTrait,
         ParametersTrait;
 
     /**

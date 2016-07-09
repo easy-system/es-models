@@ -9,11 +9,9 @@
  */
 namespace Es\Models;
 
-use Countable;
 use Es\Container\Accessors\AccessorsInterface;
 use Es\Container\Conversion\ConversionInterface;
 use Es\Container\Parameters\ParametersInterface;
-use Iterator;
 
 /**
  * The representation of common model.
@@ -21,8 +19,6 @@ use Iterator;
 interface ModelInterface
     extends AccessorsInterface,
             ConversionInterface,
-            Countable,
-            Iterator,
             ParametersInterface
 {
     /**
